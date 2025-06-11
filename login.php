@@ -1,8 +1,11 @@
 <?php
-  include 'header.php';
   session_start();
   if(isset($_SESSION["username"])){
     session_destroy();
+    include 'header.php';
+  }else{
+    session_abort();
+    include 'header.php';
   }
 ?>
 

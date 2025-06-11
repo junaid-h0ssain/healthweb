@@ -72,7 +72,7 @@
         $_SESSION["pass"] = $_POST["pass"];
 
           
-        $sq = "INSERT INTO USERS (name,pass) VALUES ('$username','$pass')";
+        $sq = "INSERT INTO USER (name,pass) VALUES ('$username','$pass')";
         mysqli_query($conn,$sq);
         header("Location: home.php");
         
