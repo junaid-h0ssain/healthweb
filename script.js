@@ -13,10 +13,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 var selectedSymptoms = [];
 
 function selectSymptom(button) {
-   
+
     selectedSymptoms.push(button.textContent);
 
-   
+
     button.classList.add('selected');
 }
 
@@ -29,18 +29,18 @@ function submitForm() {
         },
         body: JSON.stringify({ symptoms: selectedSymptoms })
     })
-    .then(response => response.json())
-    .then(data => {
-    
-        document.getElementById('result').innerHTML = `<h2>Possible Diseases:</h2><ul>${data.diseases.map(disease => `<li>${disease}</li>`).join('')}</ul>`;
-    })
-    .catch(error => console.error('Error:', error));
+        .then(response => response.json())
+        .then(data => {
+
+            document.getElementById('result').innerHTML = `<h2>Possible Diseases:</h2><ul>${data.diseases.map(disease => `<li>${disease}</li>`).join('')}</ul>`;
+        })
+        .catch(error => console.error('Error:', error));
 }
 
 function selectSymptom(button) {
     var symptom = button.textContent;
 
-   
+
     var index = selectedSymptoms.indexOf(symptom);
     if (index > -1) {
         // If the symptom is already selected, deselect it
@@ -54,7 +54,7 @@ function selectSymptom(button) {
 }
 
 // BMI Calculator
-document.getElementById('bmi-form').addEventListener('submit', function(event) {
+document.getElementById('bmi-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
 
     // Get input values
@@ -77,7 +77,7 @@ function calculateBMI(height, weight) {
 
 
 // BMR Calculator
-document.getElementById('bmr-form').addEventListener('submit', function(event) {
+document.getElementById('bmr-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
 
     // Get input values
@@ -129,7 +129,7 @@ function calculateBMR(height, weight, age, gender, activityLevel) {
 }
 
 // Calories Converter
-document.getElementById('energy-converter').addEventListener('submit', function(event) {
+document.getElementById('energy-converter').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
 
     // Get input values
