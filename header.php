@@ -28,14 +28,14 @@ session_start();
           <a href="#foot">Contact</a>
           <a href="wellness_program.php">Wellness Programs</a>
           <a href="FAQ_s_support.php">FAQs and Support </a>
-          <a href="home.php#calculator">Health Calculator</a>
+          <a href="index.php#calculator">Health Calculator</a>
         </div>
       </div>
 
 
 
 
-      <a href="home.php">
+      <a href="index.php">
         <img src="img/logo.png" class="logo" alt="Logo">
 
 

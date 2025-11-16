@@ -54,7 +54,7 @@
 <?php
     $db_server = "localhost";
     $db_user = "root";
-    $db_password = "";
+    $db_password = "4466";
     $db_name = "project";
     $conn = "";
     
@@ -74,7 +74,7 @@
           
         $sq = "INSERT INTO USER (name,pass) VALUES ('$username','$pass')";
         mysqli_query($conn,$sq);
-        header("Location: home.php");
+        header("Location: index.php");
         
     }
 

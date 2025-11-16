@@ -19,13 +19,13 @@ cd "c:/Users/junu/Downloads/New folder/healthweb"
 php -S localhost:8000
 ```
 
-Then open http://localhost:8000/home.php (or http://localhost:8000) in your browser.
+Then open http://localhost:8000/index.php (or http://localhost:8000) in your browser.
 
 If you use XAMPP/WAMP, place the project folder inside your webroot (`C:/xampp/htdocs/healthweb`) and start Apache.
 
 ## Project structure (high level)
 
-- `home.php` — Landing page.
+- `index.php` — Landing page.
 - `login.php` — Login form (no external auth configured by default).
 - `profile.php` — User profile page.
 - `find_doctors.php` — Search/lookup for doctors.

@@ -21,115 +21,107 @@ include 'header.php';
     <input type="checkbox" class="btn-check" id="7" autocomplete="off" name="7" value="7">
     <label class="btn btn-outline-primary" for="7">Sneezing</label>
     <input type="checkbox" class="btn-check" id="8" autocomplete="off" name="8" value="8">
-    <label class="btn btn-outline-primary" for="8">Sore Throat</label>
+    <label class="btn btn-outline-primary" for="8">Mild Fatigue</label>
     <input type="checkbox" class="btn-check" id="9" autocomplete="off" name="9" value="9">
-    <label class="btn btn-outline-primary" for="9">Cough</label>
+    <label class="btn btn-outline-primary" for="9">High Fever</label>
     <input type="checkbox" class="btn-check" id="10" autocomplete="off" name="10" value="10">
-    <label class="btn btn-outline-primary" for="10">Mild Fatigue</label>
+    <label class="btn btn-outline-primary" for="10">Cough with Phlegm</label>
     <input type="checkbox" class="btn-check" id="11" autocomplete="off" name="11" value="11">
-    <label class="btn btn-outline-primary" for="11">High Fever</label>
+    <label class="btn btn-outline-primary" for="11">Chest Pain</label>
     <input type="checkbox" class="btn-check" id="12" autocomplete="off" name="12" value="12">
-    <label class="btn btn-outline-primary" for="12">Cough with Phlegm</label>
+    <label class="btn btn-outline-primary" for="12">Breathlessness</label>
     <input type="checkbox" class="btn-check" id="13" autocomplete="off" name="13" value="13">
-    <label class="btn btn-outline-primary" for="13">Chest Pain</label>
+    <label class="btn btn-outline-primary" for="13">Shortness of Breath</label>
     <input type="checkbox" class="btn-check" id="14" autocomplete="off" name="14" value="14">
-    <label class="btn btn-outline-primary" for="14">Breathlessness</label>
+    <label class="btn btn-outline-primary" for="14">Blurred Vision</label>
     <input type="checkbox" class="btn-check" id="15" autocomplete="off" name="15" value="15">
-    <label class="btn btn-outline-primary" for="15">Fatigue</label>
+    <label class="btn btn-outline-primary" for="15">Nausea</label>
     <input type="checkbox" class="btn-check" id="16" autocomplete="off" name="16" value="16">
-    <label class="btn btn-outline-primary" for="16">Shortness of Breath</label>
+    <label class="btn btn-outline-primary" for="16">Vomiting</label>
     <input type="checkbox" class="btn-check" id="17" autocomplete="off" name="17" value="17">
-    <label class="btn btn-outline-primary" for="17">Blurred Vision</label>
+    <label class="btn btn-outline-primary" for="17">Abdominal Pain</label>
     <input type="checkbox" class="btn-check" id="18" autocomplete="off" name="18" value="18">
-    <label class="btn btn-outline-primary" for="18">Nausea</label>
+    <label class="btn btn-outline-primary" for="18">Loss of Appetite</label>
     <input type="checkbox" class="btn-check" id="19" autocomplete="off" name="19" value="19">
-    <label class="btn btn-outline-primary" for="19">Vomiting</label>
+    <label class="btn btn-outline-primary" for="19">Dark Urine</label>
     <input type="checkbox" class="btn-check" id="20" autocomplete="off" name="20" value="20">
-    <label class="btn btn-outline-primary" for="20">Abdominal Pain</label>
+    <label class="btn btn-outline-primary" for="20">Swelling in Legs/Feet/Face</label>
     <input type="checkbox" class="btn-check" id="21" autocomplete="off" name="21" value="21">
-    <label class="btn btn-outline-primary" for="21">Loss of Appetite</label>
+    <label class="btn btn-outline-primary" for="21">Difficulty Concentrating</label>
     <input type="checkbox" class="btn-check" id="22" autocomplete="off" name="22" value="22">
-    <label class="btn btn-outline-primary" for="22">Dark Urine</label>
+    <label class="btn btn-outline-primary" for="22">Weight Loss</label>
     <input type="checkbox" class="btn-check" id="23" autocomplete="off" name="23" value="23">
-    <label class="btn btn-outline-primary" for="23">Swelling in Legs/Feet/Face</label>
+    <label class="btn btn-outline-primary" for="23">Fever Chills</label>
     <input type="checkbox" class="btn-check" id="24" autocomplete="off" name="24" value="24">
-    <label class="btn btn-outline-primary" for="24">Difficulty Concentrating</label>
+    <label class="btn btn-outline-primary" for="24">Headache</label>
     <input type="checkbox" class="btn-check" id="25" autocomplete="off" name="25" value="25">
-    <label class="btn btn-outline-primary" for="25">Weight Loss</label>
+    <label class="btn btn-outline-primary" for="25">Dizziness</label>
     <input type="checkbox" class="btn-check" id="26" autocomplete="off" name="26" value="26">
-    <label class="btn btn-outline-primary" for="26">Fever Chills</label>
+    <label class="btn btn-outline-primary" for="26">Back Pain</label>
     <input type="checkbox" class="btn-check" id="27" autocomplete="off" name="27" value="27">
-    <label class="btn btn-outline-primary" for="27">Headache</label>
+    <label class="btn btn-outline-primary" for="27">Joint Pain</label>
     <input type="checkbox" class="btn-check" id="28" autocomplete="off" name="28" value="28">
-    <label class="btn btn-outline-primary" for="28">Dizziness</label>
+    <label class="btn btn-outline-primary" for="28">Muscle Stiffness</label>
     <input type="checkbox" class="btn-check" id="29" autocomplete="off" name="29" value="29">
-    <label class="btn btn-outline-primary" for="29">Chest Pain</label>
+    <label class="btn btn-outline-primary" for="29">Loss of Height</label>
     <input type="checkbox" class="btn-check" id="30" autocomplete="off" name="30" value="30">
-    <label class="btn btn-outline-primary" for="30">Back Pain</label>
+    <label class="btn btn-outline-primary" for="30">Stooped Posture</label>
     <input type="checkbox" class="btn-check" id="31" autocomplete="off" name="31" value="31">
-    <label class="btn btn-outline-primary" for="31">Joint Pain</label>
+    <label class="btn btn-outline-primary" for="31">Bone Fractures</label>
     <input type="checkbox" class="btn-check" id="32" autocomplete="off" name="32" value="32">
-    <label class="btn btn-outline-primary" for="32">Muscle Stiffness</label>
+    <label class="btn btn-outline-primary" for="32">Tremors</label>
     <input type="checkbox" class="btn-check" id="33" autocomplete="off" name="33" value="33">
-    <label class="btn btn-outline-primary" for="33">Loss of Height</label>
+    <label class="btn btn-outline-primary" for="33">Psychic Symptoms (Fear, Anxiety)</label>
     <input type="checkbox" class="btn-check" id="34" autocomplete="off" name="34" value="34">
-    <label class="btn btn-outline-primary" for="34">Stooped Posture</label>
+    <label class="btn btn-outline-primary" for="34">Numbness or Weakness in Limbs</label>
     <input type="checkbox" class="btn-check" id="35" autocomplete="off" name="35" value="35">
-    <label class="btn btn-outline-primary" for="35">Bone Fractures</label>
+    <label class="btn btn-outline-primary" for="35">Coordination/Balance Problems</label>
     <input type="checkbox" class="btn-check" id="36" autocomplete="off" name="36" value="36">
-    <label class="btn btn-outline-primary" for="36">Tremors</label>
+    <label class="btn btn-outline-primary" for="36">Pelvic Pain</label>
     <input type="checkbox" class="btn-check" id="37" autocomplete="off" name="37" value="37">
-    <label class="btn btn-outline-primary" for="37">Psychic Symptoms (Fear, Anxiety)</label>
+    <label class="btn btn-outline-primary" for="37">Pain During Intercourse</label>
     <input type="checkbox" class="btn-check" id="38" autocomplete="off" name="38" value="38">
-    <label class="btn btn-outline-primary" for="38">Numbness or Weakness in Limbs</label>
+    <label class="btn btn-outline-primary" for="38">Painful Bowel Movements</label>
     <input type="checkbox" class="btn-check" id="39" autocomplete="off" name="39" value="39">
-    <label class="btn btn-outline-primary" for="39">Coordination/Balance Problems</label>
+    <label class="btn btn-outline-primary" for="39">Excessive Bleeding During Menstruation</label>
     <input type="checkbox" class="btn-check" id="40" autocomplete="off" name="40" value="40">
-    <label class="btn btn-outline-primary" for="40">Pelvic Pain</label>
+    <label class="btn btn-outline-primary" for="40">Infertility</label>
     <input type="checkbox" class="btn-check" id="41" autocomplete="off" name="41" value="41">
-    <label class="btn btn-outline-primary" for="41">Pain During Intercourse</label>
+    <label class="btn btn-outline-primary" for="41">Seizures</label>
     <input type="checkbox" class="btn-check" id="42" autocomplete="off" name="42" value="42">
-    <label class="btn btn-outline-primary" for="42">Painful Bowel Movements</label>
+    <label class="btn btn-outline-primary" for="42">Temporary Confusion</label>
     <input type="checkbox" class="btn-check" id="43" autocomplete="off" name="43" value="43">
-    <label class="btn btn-outline-primary" for="43">Excessive Bleeding During Menstruation</label>
+    <label class="btn btn-outline-primary" for="43">Uncontrollable Jerking Movements</label>
     <input type="checkbox" class="btn-check" id="44" autocomplete="off" name="44" value="44">
-    <label class="btn btn-outline-primary" for="44">Infertility</label>
+    <label class="btn btn-outline-primary" for="44">Loss of Consciousness</label>
     <input type="checkbox" class="btn-check" id="45" autocomplete="off" name="45" value="45">
-    <label class="btn btn-outline-primary" for="45">Seizures</label>
+    <label class="btn btn-outline-primary" for="45">Memory Loss</label>
     <input type="checkbox" class="btn-check" id="46" autocomplete="off" name="46" value="46">
-    <label class="btn btn-outline-primary" for="46">Temporary Confusion</label>
+    <label class="btn btn-outline-primary" for="46">Disorientation</label>
     <input type="checkbox" class="btn-check" id="47" autocomplete="off" name="47" value="47">
-    <label class="btn btn-outline-primary" for="47">Uncontrollable Jerking Movements</label>
+    <label class="btn btn-outline-primary" for="47">Mood Swings</label>
     <input type="checkbox" class="btn-check" id="48" autocomplete="off" name="48" value="48">
-    <label class="btn btn-outline-primary" for="48">Loss of Consciousness</label>
+    <label class="btn btn-outline-primary" for="48">Challenges in Problem-Solving</label>
     <input type="checkbox" class="btn-check" id="49" autocomplete="off" name="49" value="49">
-    <label class="btn btn-outline-primary" for="49">Memory Loss</label>
+    <label class="btn btn-outline-primary" for="49">Slowed Movement</label>
     <input type="checkbox" class="btn-check" id="50" autocomplete="off" name="50" value="50">
-    <label class="btn btn-outline-primary" for="50">Disorientation</label>
+    <label class="btn btn-outline-primary" for="50">Impaired Posture</label>
     <input type="checkbox" class="btn-check" id="51" autocomplete="off" name="51" value="51">
-    <label class="btn btn-outline-primary" for="51">Mood Swings</label>
+    <label class="btn btn-outline-primary" for="51">Loss of Automatic Movements</label>
     <input type="checkbox" class="btn-check" id="52" autocomplete="off" name="52" value="52">
-    <label class="btn btn-outline-primary" for="52">Challenges in Problem-Solving</label>
+    <label class="btn btn-outline-primary" for="52">Reduced Range of Motion</label>
     <input type="checkbox" class="btn-check" id="53" autocomplete="off" name="53" value="53">
-    <label class="btn btn-outline-primary" for="53">Slowed Movement</label>
+    <label class="btn btn-outline-primary" for="53">Redness of Skin Around Joint</label>
     <input type="checkbox" class="btn-check" id="54" autocomplete="off" name="54" value="54">
-    <label class="btn btn-outline-primary" for="54">Impaired Posture</label>
+    <label class="btn btn-outline-primary" for="54">Changes in a Mole or Wart</label>
     <input type="checkbox" class="btn-check" id="55" autocomplete="off" name="55" value="55">
-    <label class="btn btn-outline-primary" for="55">Loss of Automatic Movements</label>
+    <label class="btn btn-outline-primary" for="55">Loss of Vision</label>
     <input type="checkbox" class="btn-check" id="56" autocomplete="off" name="56" value="56">
-    <label class="btn btn-outline-primary" for="56">Reduced Range of Motion</label>
+    <label class="btn btn-outline-primary" for="56">Loss of Hearing</label>
     <input type="checkbox" class="btn-check" id="57" autocomplete="off" name="57" value="57">
-    <label class="btn btn-outline-primary" for="57">Redness of Skin Around Joint</label>
+    <label class="btn btn-outline-primary" for="57">Loss of Smell or Taste</label>
     <input type="checkbox" class="btn-check" id="58" autocomplete="off" name="58" value="58">
-    <label class="btn btn-outline-primary" for="58">Changes in a Mole or Wart</label>
-    <input type="checkbox" class="btn-check" id="59" autocomplete="off" name="59" value="59">
-    <label class="btn btn-outline-primary" for="59">Loss of Vision</label>
-    <input type="checkbox" class="btn-check" id="60" autocomplete="off" name="60" value="60">
-    <label class="btn btn-outline-primary" for="60">Loss of Hearing</label>
-    <input type="checkbox" class="btn-check" id="61" autocomplete="off" name="61" value="61">
-    <label class="btn btn-outline-primary" for="61">Loss of Smell or Taste</label>
-    <input type="checkbox" class="btn-check" id="62" autocomplete="off" name="62" value="62">
-    <label class="btn btn-outline-primary" for="62">Difficulty Speaking</label>
+    <label class="btn btn-outline-primary" for="58">Difficulty Speaking</label>
 
     <br><input type="submit" class="submit" name="submit" value="submit"></input>
   </form>
@@ -148,7 +140,7 @@ include 'header.php';
 
     $db_server = "localhost";
     $db_user = "root";
-    $db_password = "";
+    $db_password = "4466";
     $db_name = "project";
     $connect = "";
 
