@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 <section class="symptom">
-  <form id="symptomForm" action="symptoms.php" method="post">
+  <form id="symptomForm" action="symptoms.php" method="get">
     <h2>Select Symptoms</h2>
     <p>Please select any symptoms you are experiencing from the list below:</p>
 
@@ -149,7 +149,7 @@ include 'header.php';
     $prt = array();
     foreach ($symps as $symp) {
 
-      $sql = "SELECT D.DNAME FROM DIS D INNER JOIN RESULT R ON D.ID = R.DID
+      $sql = "SELECT D.DNAME FROM diseases D INNER JOIN result R ON D.DID = R.DID
         WHERE R.SID={$symp}
         GROUP BY D.DNAME";
       $r = mysqli_query($connect, $sql);
