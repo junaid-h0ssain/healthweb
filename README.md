@@ -8,6 +8,7 @@ A small PHP-based health and wellness web project containing pages for finding d
 - PHP (7.2+ recommended)
 - HTML/CSS/JavaScript
 - XAMPP on Windows. Apache, PHP, MySQL linux.
+- Can also use Laragon
 - A browser.
 
 ## Quick local run (built-in PHP server)
