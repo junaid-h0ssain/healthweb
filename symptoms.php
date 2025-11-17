@@ -129,6 +129,8 @@ include 'header.php';
   <div id="result">
     <?php
     $symps = array();
+    $hasResults = false;
+    
     for ($i = 0; $i <= 100; $i++) {
       if (isset($_GET["submit"])) {
         if (isset($_GET[$i])) {
@@ -137,33 +139,57 @@ include 'header.php';
       }
     }
 
+    if (isset($_GET["submit"]) && !empty($symps)) {
+      $hasResults = true;
+      echo '<h3 style="color: #088178; text-align: center; margin-bottom: 20px;">Possible Diseases:</h3>';
+      echo '<div style="background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">';
+      
+      $db_server = "localhost";
+      $db_user = "root";
+      $db_password = "4466";
+      $db_name = "project";
+      $connect = "";
 
-    $db_server = "localhost";
-    $db_user = "root";
-    $db_password = "4466";
-    $db_name = "project";
-    $connect = "";
+      $connect = mysqli_connect($db_server, $db_user, $db_password, $db_name);
 
-    $connect = mysqli_connect($db_server, $db_user, $db_password, $db_name);
+      $prt = array();
+      foreach ($symps as $symp) {
 
-    $prt = array();
-    foreach ($symps as $symp) {
+        $sql = "SELECT D.DNAME FROM diseases D INNER JOIN result R ON D.DID = R.DID
+          WHERE R.SID={$symp}
+          GROUP BY D.DNAME";
+        $r = mysqli_query($connect, $sql);
 
-      $sql = "SELECT D.DNAME FROM diseases D INNER JOIN result R ON D.DID = R.DID
-        WHERE R.SID={$symp}
-        GROUP BY D.DNAME";
-      $r = mysqli_query($connect, $sql);
-
-      if (mysqli_num_rows($r) > 0) {
-        $row = mysqli_fetch_assoc($r);
-        $d = $row["DNAME"];
-        if (!in_array($d, $prt)) {
-          echo "{$d} <br>";
-          $prt[] = $d;
+        if (mysqli_num_rows($r) > 0) {
+          $row = mysqli_fetch_assoc($r);
+          $d = $row["DNAME"];
+          if (!in_array($d, $prt)) {
+            echo '<div style="background: #fff; margin: 10px 0; padding: 15px; border-radius: 8px; font-size: 20px; color: #f70505ff; border-left: 4px solid #088178; font-weight: bold;">' . $d . '</div>';
+            $prt[] = $d;
+          }
         }
       }
+      
+      if (empty($prt)) {
+        echo '<p style="text-align: center; color: #666; font-size: 18px;">No diseases found matching your symptoms. Please consult a doctor.</p>';
+      }
+      
+      echo '</div>';
     }
     ?>
+    
+    <?php if ($hasResults): ?>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.getElementById('result').scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'end'
+          });
+        }, 100);
+      });
+    </script>
+    <?php endif; ?>
   </div>
 </section>
 
