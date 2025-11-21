@@ -1,7 +1,10 @@
 # HealthWeb — PHP Health & Wellness Portal
 
 A small PHP-based health and wellness web project containing pages for finding doctors, viewing symptoms, wellness programs, medicines, and basic user profile/login with sessions.
-
+Contributors:
+Sujit Mohajan
+Junaid Hossain
+A.R Wahid
 
 ## Requirements
 
