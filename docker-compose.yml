@@ -1,0 +1,42 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: healthweb-web
+    ports:
+      - "8080:80"
+    environment:
+      DB_HOST: db
+      DB_USER: project
+      DB_PASSWORD: project
+      DB_NAME: project
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mariadb:11.4
+    container_name: healthweb-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass
+      MARIADB_DATABASE: project
+      MARIADB_USER: project
+      MARIADB_PASSWORD: project
+    ports:
+      - "3307:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - ./project.sql:/docker-entrypoint-initdb.d/01-project.sql:ro
+    healthcheck:
+      test:
+        ["CMD-SHELL", "mariadb-admin ping -h localhost -uroot -p$${MARIADB_ROOT_PASSWORD} --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mariadb_data:

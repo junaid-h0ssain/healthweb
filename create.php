@@ -52,10 +52,10 @@
 </html>
 
 <?php
-    $db_server = "localhost";
-    $db_user = "root";
-    $db_password = "4466";
-    $db_name = "project";
+  $db_server = getenv("DB_HOST") ?: "db";
+  $db_user = getenv("DB_USER") ?: "project";
+  $db_password = getenv("DB_PASSWORD") ?: "project";
+  $db_name = getenv("DB_NAME") ?: "project";
     $conn = "";
     
     try{

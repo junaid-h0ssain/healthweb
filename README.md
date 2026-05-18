@@ -27,6 +27,24 @@ Then open http://localhost:8000/index.php (or http://localhost:8000) in your bro
 
 If you use XAMPP/WAMP, place the project folder inside your webroot (`C:/xampp/htdocs/healthweb`) and start Apache.
 
+## Run with Docker
+
+This project includes a Docker Compose setup for a PHP-Apache app container and a MariaDB database.
+
+Run it from the project root:
+
+```bash
+docker compose up --build
+```
+
+Then open http://localhost:8080/index.php in your browser. The first database start automatically imports `project.sql` into the `project` database.
+
+If you want to reset the database and rerun the import, stop the stack and remove the named volume:
+
+```bash
+docker compose down -v
+```
+
 ## Project structure (high level)
 
 - `index.php` — Landing page.

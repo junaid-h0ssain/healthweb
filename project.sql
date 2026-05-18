@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `diseases` (
   `did` int NOT NULL,
   `dname` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `diseases`
@@ -67,7 +67,7 @@ CREATE TABLE `result` (
   `ID` int NOT NULL,
   `SID` int NOT NULL,
   `DID` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `result`
@@ -200,7 +200,7 @@ INSERT INTO `result` (`ID`, `SID`, `DID`) VALUES
 CREATE TABLE `symptoms` (
   `sid` int NOT NULL,
   `sname` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `symptoms`
@@ -276,7 +276,7 @@ CREATE TABLE `user` (
   `id` int NOT NULL,
   `name` varchar(50) NOT NULL,
   `pass` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `user`

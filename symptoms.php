@@ -144,10 +144,10 @@ include 'header.php';
       echo '<h3 style="color: #088178; text-align: center; margin-bottom: 20px;">Possible Diseases:</h3>';
       echo '<div style="background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">';
       
-      $db_server = "localhost";
-      $db_user = "root";
-      $db_password = "4466";
-      $db_name = "project";
+      $db_server = getenv("DB_HOST") ?: "db";
+      $db_user = getenv("DB_USER") ?: "project";
+      $db_password = getenv("DB_PASSWORD") ?: "project";
+      $db_name = getenv("DB_NAME") ?: "project";
       $connect = "";
 
       $connect = mysqli_connect($db_server, $db_user, $db_password, $db_name);
